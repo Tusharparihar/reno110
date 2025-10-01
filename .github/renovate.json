@@ -14,11 +14,10 @@
       "automergeType": "branch-push"
     },
     {
-      "description": "Force AzureRM Patch updates to lag by one version (N-1 or older)",
+      "description": "Force AzureRM updates to lag by one version (N-1 or older)",
       "matchPackageNames": ["hashicorp/azurerm"],
-      "matchUpdateTypes": ["patch"],
       "allowedVersions": "/^(?!\\Q{{latestVersion}}\\E$).*$/",
-      "groupName": "AzureRM Stable Patches (N-1)"
+      "groupName": "AzureRM Stable Updates (N-1)"
     }
   ]
 }
