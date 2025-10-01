@@ -14,10 +14,11 @@
       "automergeType": "branch-push"
     },
     {
-      "description": "Force AzureRM updates to lag by one version (N-1 or older)",
+      "description": "Delay AzureRM Patch updates by 7 days to promote stability (workaround for N-1)",
       "matchPackageNames": ["hashicorp/azurerm"],
-      "versionSelection": "non-latest",
-      "groupName": "AzureRM Stable Updates (N-1)"
+      "matchUpdateTypes": ["patch"], // Re-added: No conflict with stabilityDays
+      "stabilityDays": 7, // <-- This is the only configuration that works here
+      "groupName": "AzureRM Stable Patches (Delayed)"
     }
   ]
 }
