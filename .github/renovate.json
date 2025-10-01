@@ -16,7 +16,7 @@
     {
       "description": "Force AzureRM updates to lag by one version (N-1 or older)",
       "matchPackageNames": ["hashicorp/azurerm"],
-      "allowedVersions": "/^(?!\\Q{{latestVersion}}\\E$).*$/",
+      "allowedVersions": "^(?!\\Q{{latestVersion}}\\E$).*$", 
       "groupName": "AzureRM Stable Updates (N-1)"
     }
   ]
