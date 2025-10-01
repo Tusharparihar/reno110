@@ -16,8 +16,8 @@
     {
       "description": "Delay AzureRM Patch updates by 7 days to promote stability (workaround for N-1)",
       "matchPackageNames": ["hashicorp/azurerm"],
-      "matchUpdateTypes": ["patch"], // Re-added: No conflict with stabilityDays
-      "stabilityDays": 7, // <-- This is the only configuration that works here
+      "matchUpdateTypes": ["patch"],
+      "stabilityDays": 7, 
       "groupName": "AzureRM Stable Patches (Delayed)"
     }
   ]
